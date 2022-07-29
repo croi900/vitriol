@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\client">
+      <UniqueIdentifier>{eb74260c-5e69-43d5-af3b-3145db09528c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{c6920828-73dd-49cf-a225-213edaa4bdc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{798d63eb-b88f-4b52-9090-32a59949ff49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{d245bbfc-4d7c-441d-9a79-f00133aadb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\vgui">
+      <UniqueIdentifier>{42f21377-7a82-40db-8183-2ef900cc1f39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\imgui">
+      <UniqueIdentifier>{bb9c0e8b-3be7-49aa-98b2-219d29c5a0f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\imgui">
+      <UniqueIdentifier>{4dea668f-209d-4935-8142-213c3796a199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core\experimental%28unused0">
+      <UniqueIdentifier>{ad5e6581-292f-40f1-8807-c5b88995ddc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\menu">
+      <UniqueIdentifier>{8d5815d4-d469-464e-9e21-aee0ad152187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hacks">
+      <UniqueIdentifier>{43b50d18-4369-4c10-a07a-25920bcd5ee3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\imgui_widgets.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\imgui.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\imgui_draw.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\imgui_tables.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\backends\imgui_impl_dx11.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\backends\imgui_impl_win32.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\backends\imgui_impl_dx9.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-1.88\imgui_demo.cpp">
+      <Filter>Source Files\imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\client\usercmd.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\C_BaseCombatCharacter.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\c_basecombatweapon.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\C_BasePlayer.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CBaseAnimating.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CClientEntityList.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CCollisionProperty.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CHLClient.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CInput.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CInputSystem.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\ClientClass.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\ClientModeShared.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\ConCommand.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\ConVar.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CUniformRandomStream.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CViewRender.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\client\CViewSetup.h">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CEngineClient.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CGameEventManager.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CIVDebugOverlay.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CMaterialSystem.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CModelInfo.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CModelRender.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CNetChan.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\CVRenderView.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\gametrace.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\iclientrenderable.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\IEngineTrace.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\imaterial.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\inetmessage.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\IStudioRender.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\takedamageinfo.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\trace.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\engine\vmatrix.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\mathlib\math_pfns.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\mathlib\mathlib.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="init_stop.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\vgui\ISurfaceV30.h">
+      <Filter>Header Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\vgui\VPanelWrapper.h">
+      <Filter>Header Files\vgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hook.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imstb_truetype.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imstb_textedit.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imstb_rectpack.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imgui_internal.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imgui.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\imconfig.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\backends\imgui_impl_dx11.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\backends\imgui_impl_win32.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-1.88\backends\imgui_impl_dx9.h">
+      <Filter>Header Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hijack.h">
+      <Filter>Header Files\core\experimental%28unused0</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_utils.h">
+      <Filter>Header Files\core\experimental%28unused0</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Header Files\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="esp.h">
+      <Filter>Header Files\hacks</Filter>
+    </ClInclude>
+    <ClInclude Include="aimbot.h">
+      <Filter>Header Files\hacks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
