@@ -7,10 +7,10 @@
 namespace glob {
 	namespace menu {
 		namespace bg {
-			ImColor main_bg(85, 85, 150, 32);
-			ImColor bottom_bg(0, 40, 60, 128);
-			ImColor top_bg(0, 40, 60, 128);
-			ImColor grid(0, 60, 60, 255);
+			ImColor main_bg(85, 85, 150, 0);
+			ImColor bottom_bg(0, 40, 60, 0);
+			ImColor top_bg(0, 40, 60, 0);
+			ImColor grid(0, 60, 60, 0);
 
 			std::ofstream out("esp_misc_hp_bar.kcc");
 			std::ifstream in("esp_misc_hp_bar.kcc");
@@ -91,6 +91,8 @@ namespace glob {
 			int Bordered = 0, DoubleBordered = 1, Nothing = 2;
 		}
 
+		bool dormant = false;
+
 		namespace box {
 			int style = BOXESP_STYLE::Corners;
 			int substyle = BOXESP_SUBSTYLE::Bordered;
@@ -98,9 +100,50 @@ namespace glob {
 			ImColor inner_color = ImColor(40, 100, 120);
 			ImColor outer_color = ImColor(0, 0, 0);
 
-			bool enabled = true;
+			bool enabled = false;
 
 
+			std::ofstream out("esp_box.kcc");
+			std::ifstream in("esp_box.kcc");
+			void save() {
+				out << style << '\n'
+					<< substyle << '\n'
+					<< inner_color.Value.x << '\n'
+					<< inner_color.Value.y << '\n'
+					<< inner_color.Value.z << '\n'
+					<< inner_color.Value.w << '\n'
+					<< outer_color.Value.x << '\n'
+					<< outer_color.Value.y << '\n'
+					<< outer_color.Value.z << '\n'
+					<< outer_color.Value.w << '\n'
+					<< enabled;
+			}
+
+			void load() {
+				in >> style
+					>> substyle
+					>> inner_color.Value.x
+					>> inner_color.Value.y
+					>> inner_color.Value.z
+					>> inner_color.Value.w
+					>> outer_color.Value.x
+					>> outer_color.Value.y
+					>> outer_color.Value.z
+					>> outer_color.Value.w
+					>> enabled;
+			}
+		}
+
+		namespace ebox {
+			int style = BOXESP_STYLE::Corners;
+			int substyle = BOXESP_SUBSTYLE::Bordered;
+
+			ImColor inner_color = ImColor(40, 100, 120);
+			ImColor outer_color = ImColor(0, 0, 0);
+
+			bool enabled = false;
+			bool dormant = false;
+										
 			std::ofstream out("esp_box.kcc");
 			std::ifstream in("esp_box.kcc");
 			void save() {
@@ -138,7 +181,7 @@ namespace glob {
 				ImColor outer_color(85, 85, 85);
 
 				long int style = TEXT_STYLE::Bordered;
-				bool enabled = true;
+				bool enabled = false;
 
 				long int position = INFO_POSITION::Top;
 
@@ -179,7 +222,7 @@ namespace glob {
 				ImColor outer_color(85, 85, 85);
 
 				long int style = TEXT_STYLE::Bordered;
-				bool enabled = true;
+				bool enabled = false;
 
 				long int position = INFO_POSITION::Bottom;
 
@@ -219,7 +262,7 @@ namespace glob {
 				ImColor outer_color(85, 85, 85);
 
 				long int style = TEXT_STYLE::Bordered;
-				bool enabled = true;
+				bool enabled = false;
 
 				long int position = INFO_POSITION::Bottom;
 
@@ -259,7 +302,7 @@ namespace glob {
 				ImColor outer_color(85, 85, 85);
 
 				long int style = TEXT_STYLE::Bordered;
-				bool enabled = true;
+				bool enabled = false;
 
 				int decimals = 0;
 				long int position = INFO_POSITION::Bottom;
@@ -302,7 +345,7 @@ namespace glob {
 				ImColor outer_color(85, 85, 85);
 
 				long int style = TEXT_STYLE::Bordered;
-				bool enabled = true;
+				bool enabled = false;
 				long int position = INFO_POSITION::TopRight;
 
 				std::ofstream out("esp_info_rank.kcc");

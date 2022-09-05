@@ -386,9 +386,9 @@ namespace hacks {
 
 		void do_esp(C_BasePlayer* p, int idx) {
 			
-			if (p == nullptr)
+			if (p == nullptr || p == NULL)
 				return;
-			if (p->IsDormant())
+			if (p->IsDormant() && !glob::esp::dormant)
 				return;
 			if (!p->IsPlayer() || !p->IsAlive())
 				return;

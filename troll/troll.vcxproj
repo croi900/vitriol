@@ -24,6 +24,7 @@
     <ProjectGuid>{eb948272-31b4-4aed-8ffb-eac435e5faf5}</ProjectGuid>
     <RootNamespace>troll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>vitriol</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -182,7 +183,7 @@
     <ClInclude Include="draw_utils.h" />
     <ClInclude Include="esp.h" />
     <ClInclude Include="hijack.h" />
-    <ClInclude Include="hook.h" />
+    <ClInclude Include="present.h" />
     <ClInclude Include="imgui-1.88\backends\imgui_impl_dx11.h" />
     <ClInclude Include="imgui-1.88\backends\imgui_impl_dx9.h" />
     <ClInclude Include="imgui-1.88\backends\imgui_impl_win32.h" />

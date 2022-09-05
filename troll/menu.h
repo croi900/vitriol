@@ -1,7 +1,7 @@
 #pragma once
 
 #include "settings.h"
-#include "hook.h"
+#include "present.h"
 #include "interface.h"
 #include "imgui-1.88/imgui.h"
 #include "imgui-1.88/backends/imgui_impl_dx9.h"
@@ -97,6 +97,8 @@ namespace menu {
 				ImGui::Begin("Player ESP");
 
 				ImGui::Checkbox("Enabled", &glob::esp::box::enabled);
+				ImGui::SameLine();
+				ImGui::Checkbox("Dormant", &glob::esp::dormant);
 
 				if (ImGui::BeginCombo("combo_esp_box_style", cur_style)) // The second parameter is the label previewed before opening the combo.
 				{
@@ -444,12 +446,12 @@ namespace menu {
 	}
 
 	void get_menu_state() {
-		if (GetAsyncKeyState(VK_INSERT) && !flag){
+		if (GetAsyncKeyState(VK_RSHIFT) && !flag){
 			flag = true;
 			open = !open;
 			
 		}
-		else if (!GetAsyncKeyState(VK_INSERT) && flag) {
+		else if (!GetAsyncKeyState(VK_RSHIFT) && flag) {
 			flag = false;
 		}
 	}

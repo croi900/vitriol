@@ -167,10 +167,11 @@ namespace core {
 
                 menu::menu_think();
                
-                hacks::r_aim::aim_think();
+                //hacks::r_aim::aim_think();
 
                 for(int i = 0 ;i < iface::cl_entity_list->GetHighestEntityIndex(); ++i)
-                    hacks::esp::do_esp((C_BasePlayer*)iface::cl_entity_list->GetClientEntity(i),i);
+                    if(iface::cl_entity_list != nullptr)
+                        hacks::esp::do_esp((C_BasePlayer*)iface::cl_entity_list->GetClientEntity(i),i);
 
                 ImGui::EndFrame();
                 ImGui::Render();

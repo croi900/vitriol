@@ -194,7 +194,7 @@
     <ClInclude Include="sdk\vgui\VPanelWrapper.h">
       <Filter>Header Files\vgui</Filter>
     </ClInclude>
-    <ClInclude Include="hook.h">
+    <ClInclude Include="present.h">
       <Filter>Header Files\core</Filter>
     </ClInclude>
     <ClInclude Include="imgui-1.88\imstb_truetype.h">
